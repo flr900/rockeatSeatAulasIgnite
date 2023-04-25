@@ -1,11 +1,93 @@
+
 .avatar{
-    width: calc(3rem + 12px) ;
-    height: calc(3rem + 12px) ;
+    width: 3rem ;
+    height: 3rem ;
     border-radius: 8px;
-    border: 4px solid var(--gray-800);
-    outline: 2px solid var(--green-500);
 }
 
 .comment{
-    display: block;
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.commentBox{
+    background-color: var(--gray-700);
+    border-radius: 8px;
+    padding: 1rem;
+    flex:1;
+}
+
+.commentAuthorAndTime{
+    color: var(--gray-100);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.commentAuthorAndTime strong{
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.commentAuthorAndTime time{
+    font-size: 0.75rem;
+    line-height: 1.6;
+}
+
+.commentAuthor span{
+    color: var(--gray-400);
+    margin-left: 0.3rem;
+}
+
+.commentContent header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.commentBox p{
+    padding: 1rem 0;
+    color: var(--gray-300)
+}
+
+.commentContent button {
+
+    background: transparent;
+    color: var(--gray-400);    
+    cursor: pointer;
+    border: 0;
+    line-height: 0;
+    border-radius: 2px;
+    
+}
+
+.commentContent button:hover {
+    color: var(--red-500);
+    transition: color 0.1s; 
+}
+
+.likeEngine{
+    position: absolute;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.likeEngine button {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+
+    background: none;
+    color: var(--white);    
+    cursor: pointer;
+    
+    text-align: center;
+    line-height: 0;
+    text-decoration: none;
+    border: none;
+    
 }

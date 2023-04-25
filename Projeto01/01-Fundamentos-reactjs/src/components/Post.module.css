@@ -135,3 +135,9 @@
     background: var(--white);
     color: var(--green-500);
 }
+
+.commentList{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem
+}
